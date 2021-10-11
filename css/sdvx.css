@@ -1,0 +1,83 @@
+.controller_Sdvx {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+
+.controller_top,
+.controller_mid,
+.controller_bott {
+    margin: 0 auto;
+}
+
+.controller_bott {
+    margin-top: 10px;
+}
+
+.knobL,
+.knobR {
+    width: 60px;
+    height: 60px;
+}
+
+button.st {
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+button.chip {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button.bar {
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mein {
+    margin: 50% auto;
+    position: relative;
+    text-align: center;
+}
+
+.mein button.start {
+    width: 100px;
+    height: 50px;
+}
+
+.mein.afterInit {
+    margin: 0 auto;
+    position: relative;
+    text-align: unset;
+}
+
+.mein.afterInit img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.mein.afterInit .selecter{
+    animation: beat .8s infinite alternate;
+}
+
+.mein.afterInit .selecter img {
+    position: absolute;
+    margin: calc(50% - 20%) calc(50% - 9%) auto;
+    width: 24%;
+    
+}
+
+@keyframes beat{
+    from {
+        opacity: 0;
+    }
+	to { opacity: 1; }
+}

@@ -1,0 +1,132 @@
+#my-audio {
+  width: 100%;
+}
+
+.equalizer {
+  position: relative;
+}
+
+#eq {
+  display: block;
+  margin: auto;
+  background-color: #a69999;
+  width: fit-content;
+}
+
+#eq input[type=range] {
+  cursor: pointer;
+  width: 100px !important;
+  margin: 48px -38px;
+  background-color: #e6e6e6;
+  transform: rotate(270deg);
+  -webkit-appearance: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.32);
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #44BFA3;
+  cursor: pointer;
+  -webkit-appearance: none;
+  /* margin-top: -5px; */
+}
+
+#cover {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.cover {
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid #44BFA3;
+}
+
+#cover i {
+  color: white;
+}
+
+tr.desc td#hz {
+  color: #fff;
+  font-weight: bolder;
+  writing-mode: vertical-lr;
+}
+
+tr td button#reset {
+  width: 100%;
+}
+
+a#Q,
+a#Vol {
+  color: white;
+  text-decoration: none;
+  cursor: help;
+  font-weight: bolder;
+  display: block;
+
+}
+
+label#Q-value,
+label#Vol-value {
+  font-weight: bolder;
+  color: white;
+  display: block;
+  margin-left: -25px;
+
+}
+
+label#Vol-value,
+a#Vol {
+  font-size: 14px;
+}
+
+#master>tr:nth-child(3) #reset {
+  cursor: pointer;
+}
+
+.VUcontainer{
+            position: relative;
+        }
+        #VUDisp {
+            margin: 0 auto;
+            position: relative;
+            width: 340px;
+            text-align: center;
+        }
+
+        #VUDisp canvas#demo {
+            z-index: 10;
+            display: inline-block;
+            width: 50%;
+        }
+
+        #VUDisp #preview-textfield {
+            display: none;
+        }
+
+        #VUDisp label#VU {
+            position: absolute;
+            font-weight: bolder;
+            /* margin-left: 75px; */
+            top: 30%;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            color: grey;
+            display: block;
+        }

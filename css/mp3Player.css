@@ -1,0 +1,50 @@
+.player {
+
+    /* z-index: 10; */
+    background: #F9F9F9;
+    color: #000;
+    min-height: 80px;
+    max-height: 80px;
+    display: none;
+    /* position: relative; */
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.player .left {
+    position: absolute;
+}
+
+.player .left img {
+    width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    background-size: cover;
+}
+
+.player .right {
+    margin-left: 80px;
+}
+
+.player .right .top {
+    padding-left: 10px;
+}
+
+.player .right .top .title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.player .right .bottom audio {
+    height: 32px;
+    width: 100%;
+}
+
+select#musicSel {
+    min-width: 160px;
+}
+
+.player .right .top a.song {
+    display: none;
+}
