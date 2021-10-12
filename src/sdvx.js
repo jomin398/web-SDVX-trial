@@ -28,7 +28,7 @@ function sdvx() {
         let self = this;
         self.mein.ele.classList.add('afterInit');
         let _meinImg = document.createElement('img');
-        _meinImg.src = './imgs/standby.jpg';
+        _meinImg.src = devMode?'':'./imgs/standby.jpg';
         _meinImg.alt = "standby";
 
         let _selecter = document.createElement('div');
@@ -138,7 +138,7 @@ function sdvx() {
         self.status.now = 'title';
 
         let pressKnob = (LR) => {
-            //0 : L, 1: R 
+            //0 : L, 1: R;
             if (self.status.now == 'title') {
                 self.audios.sfx.src = self.audios.sfxBseFolder + 'title_sel.mp3';
             }
@@ -151,6 +151,10 @@ function sdvx() {
         document.querySelector("div.controller_Sdvx button.st").onclick = () => {
             if (self.status.now == 'title') {
                 self.audios.sfx.src = self.audios.sfxBseFolder + 'title_enter.mp3';
+                //press enter
+                if(SDVXModule.sub.eles[0]&& SDVXModule.sub.eles[0].dataset.index == 0){
+                    self.initSongSel();
+                }
             }
         };
         ['s', 'd', 'k', 'l'].forEach((e, i) => {
@@ -209,6 +213,9 @@ function sdvx() {
         }
         //const key = document.getElementById(e.key);
         //if (key) key.classList.add('pressed');
+
+    }
+    constructer.prototype.initSongSel = function(){
 
     }
     return constructer;

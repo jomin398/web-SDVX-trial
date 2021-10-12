@@ -1,4 +1,5 @@
 let SDVXModule = null;
+let devMode = true;
 function sendAjaxRequest(url, method, data) {
     return new Promise(function(resolve, reject) {
         let xhr = new XMLHttpRequest();
